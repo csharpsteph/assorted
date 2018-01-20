@@ -18,7 +18,6 @@ public class ColorPanel extends JPanel {
 		ctrlPanel = new ControlPanel(this);
 		add(ctrlPanel, BorderLayout.SOUTH);
 		recolor(ctrlPanel.getColor());
-		//System.out.println(this);
 	}
 	
 	public void recolor(Color color) {
@@ -26,9 +25,7 @@ public class ColorPanel extends JPanel {
 	}
 	
 	private class ControlPanel extends JPanel {
-		/**
-		 * 
-		 */
+		
 		private static final long serialVersionUID = -3146928004155433457L;
 		private JTextField jtfRed, jtfGreen, jtfBlue;
 		private int r, g, b;
